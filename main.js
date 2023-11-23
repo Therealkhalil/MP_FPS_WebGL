@@ -1,7 +1,7 @@
-import * as THREE from 'three';
+        import * as THREE from 'three';
 
 		import Stats from 'three/addons/libs/stats.module.js';
-    import * as Ammo from 'ammo.js';
+        import * as Ammo from 'ammo.js';
 		import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 		import { Octree } from 'three/addons/math/Octree.js';
@@ -11,6 +11,13 @@ import * as THREE from 'three';
 
 		import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
+// ------ Ammo.js Init ------
+Ammo().then( AmmoStart );
+function AmmoStart()
+{
+    //code
+}
+		
 		const clock = new THREE.Clock();
 
 		const scene = new THREE.Scene();
@@ -422,7 +429,7 @@ import * as THREE from 'three';
 		});
 
 // add model jinx 
-loader.load( 'jinx_lowpoly_fanmodel.glb', ( target ) => {
+loader.load( 'scarecrow_target.glb', ( target ) => {
   const model2 = target.scene;
   scene.add( target.scene );
   model2.position.y -=1.75;
