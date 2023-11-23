@@ -12,11 +12,13 @@
 		import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
 // ------ Ammo.js Init ------
-Ammo().then( AmmoStart );
-function AmmoStart()
-{
-    //code
-}
+// Ammo().then( AmmoStart );
+
+
+// function AmmoStart()
+// {
+//    //code
+// }
 		
 		const clock = new THREE.Clock();
 
@@ -428,11 +430,11 @@ function AmmoStart()
 
 		});
 
-// add model jinx 
+// add model glb 2 
 loader.load( 'scarecrow_target.glb', ( target ) => {
   const model2 = target.scene;
   scene.add( target.scene );
-  model2.position.y -=1.75;
+  model2.position.y -= -2.75;
   model2.position.z -=5;
  
   
