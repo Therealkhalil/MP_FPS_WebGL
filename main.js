@@ -436,8 +436,8 @@ loader.load( 'scarecrow_target.glb', ( target ) => {
   scene.add( target.scene );
   model2.position.y -= -2.75;
   model2.position.z -=5;
- 
-  
+  //model2.velocity.add(playerVelocity);
+
   worldOctree.fromGraphNode( target.scene );
  
   target.scene.traverse( child => {
